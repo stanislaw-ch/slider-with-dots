@@ -52,9 +52,11 @@ ul, li {
 }
 
 .slider__item p {
-  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .slider__item--1 {
