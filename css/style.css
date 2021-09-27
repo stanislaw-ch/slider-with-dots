@@ -1,0 +1,147 @@
+:root {
+  --violet: violet;
+  --pink: pink;
+  --orange: orange;
+  --white: white;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+
+  margin: 1rem 1rem 2rem;
+  min-height: 400px;
+}
+
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 400px;
+}
+
+.slider__list {
+  position: relative;
+  top: 0;
+
+  display: flex;
+
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 100%;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 4em 1em;
+  min-height: 400px;
+
+  background-color: var(--violet);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.slider__item p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.slider__item--1 {
+  background-color: var(--violet);
+}
+
+.slider__item--2 {
+  background-color: var(--pink);
+}
+
+.slider__item--3 {
+  background-color: var(--orange);
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+
+  width: 50px;
+  height: 50px;
+  margin-top: -20px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.slider__button:active,
+.slider__button:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+}
+
+.slider__button--prev {
+  left: -10px;
+
+  background-image: url("../img/left-arrow.svg");
+}
+
+.slider__button--next {
+  right: -10px;
+
+  background-image: url("../img/right-arrow.svg");
+}
+
+.slider__dots {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  transform: translateX(-50%);
+}
+
+.slider__dot {
+  padding: 5px;
+  margin-right: 5px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.slider__dot:last-child {
+  margin-right: 0;
+}
+
+.slider__dot--active {
+  background-color: var(--white);
+}
+
+.slider__dot:active,
+.slider__dot:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}

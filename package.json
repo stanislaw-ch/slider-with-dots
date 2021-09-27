@@ -1,0 +1,16 @@
+{
+  "name": "slider_dots",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanislaw Chirko",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-htmlacademy": "4.0.2"
+  }
+}
