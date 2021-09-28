@@ -140,10 +140,7 @@ ul, li {
 
 .slider__dot--active {
   background-color: var(--white);
-}
 
-.slider__dot:active,
-.slider__dot:focus {
   outline: none;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
